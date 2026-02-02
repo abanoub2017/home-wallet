@@ -50,274 +50,347 @@
 
 ---
 
-## المرحلة 2: المصادقة (Authentication)
+## المرحلة 2: المصادقة (Authentication) ✅
 
 ### 2.1 Composable
 
-- [ ] إنشاء useAuth.ts
-- [ ] تنفيذ login()
-- [ ] تنفيذ logout()
-- [ ] تنفيذ auth state listener
-- [ ] معالجة الأخطاء
+- [x] إنشاء useAuth.ts
+- [x] تنفيذ login()
+- [x] تنفيذ logout()
+- [x] تنفيذ auth state listener
+- [x] معالجة الأخطاء
 
 ### 2.2 صفحة تسجيل الدخول
 
-- [ ] إنشاء LoginView.vue
-- [ ] تصميم النموذج (form)
-- [ ] ربط مع useAuth
-- [ ] إظهار رسائل الخطأ
-- [ ] إعادة التوجيه بعد النجاح
+- [x] إنشاء LoginView.vue
+- [x] تصميم النموذج (form)
+- [x] ربط مع useAuth
+- [x] إظهار رسائل الخطأ
+- [x] إعادة التوجيه بعد النجاح
 
 ### 2.3 حماية المسارات
 
-- [ ] إنشاء router/guards.ts
-- [ ] تنفيذ auth guard
-- [ ] تنفيذ guest guard
-- [ ] ربط مع router
+- [x] إنشاء router/guards.ts
+- [x] تنفيذ auth guard
+- [x] تنفيذ guest guard
+- [x] ربط مع router
 
 ### 2.4 Layout
 
-- [ ] إنشاء AppHeader.vue
-- [ ] إنشاء AppNav.vue
-- [ ] إنشاء AppLayout.vue
-- [ ] عرض معلومات المستخدم
-- [ ] زر تسجيل الخروج
+- [x] إنشاء AppHeader.vue
+- [x] إنشاء AppNav.vue
+- [x] إنشاء AppLayout.vue
+- [x] عرض معلومات المستخدم
+- [x] زر تسجيل الخروج
 
 ---
 
-## المرحلة 3: المصروفات (Expenses)
+## المرحلة 3: المصروفات (Expenses) ✅
 
 ### 3.1 Composable
 
-- [ ] إنشاء useExpenses.ts
-- [ ] تنفيذ fetchExpenses()
-- [ ] تنفيذ addExpense()
-- [ ] تنفيذ updateExpense()
-- [ ] تنفيذ deleteExpense()
-- [ ] تنفيذ real-time listener
-- [ ] حساب الإحصائيات
+- [x] إنشاء useExpenses.ts
+- [x] تنفيذ fetchExpenses()
+- [x] تنفيذ addExpense()
+- [x] تنفيذ updateExpense()
+- [x] تنفيذ deleteExpense()
+- [x] تنفيذ real-time listener
+- [x] حساب الإحصائيات
 
 ### 3.2 الفئات
 
-- [ ] إنشاء config/categories.ts
-- [ ] تعريف قائمة الفئات بالعربية
-- [ ] أيقونة لكل فئة
-- [ ] لون لكل فئة
+- [x] إنشاء config/categories.ts
+- [x] تعريف قائمة الفئات بالعربية
+- [x] أيقونة لكل فئة
+- [x] لون لكل فئة
+- [x] إنشاء useCategories.ts
+- [x] حفظ الفئات في Firestore
+- [x] إضافة/تعديل/حذف الفئات
 
 ### 3.3 قائمة المصروفات
 
-- [ ] إنشاء ExpensesView.vue
-- [ ] إنشاء ExpenseList.vue
-- [ ] إنشاء ExpenseCard.vue
-- [ ] تصفية حسب الشهر
-- [ ] تصفية حسب الفئة
-- [ ] تصفية حسب المستخدم
+- [x] إنشاء ExpensesView.vue
+- [x] عرض قائمة المصروفات
+- [x] تصفية حسب الشهر
+- [x] تصفية حسب الفئة
+- [x] البحث في المصروفات
 
 ### 3.4 إضافة مصروف
 
-- [ ] إنشاء AddExpenseView.vue
-- [ ] إنشاء ExpenseForm.vue
-- [ ] حقل المبلغ
-- [ ] حقل الفئة (select)
-- [ ] حقل التاريخ
-- [ ] حقل الملاحظات
-- [ ] التحقق من صحة البيانات
-- [ ] إرسال البيانات
+- [x] إنشاء AddExpenseView.vue
+- [x] حقل المبلغ
+- [x] حقل الفئة (select)
+- [x] حقل التاريخ
+- [x] حقل الملاحظات
+- [x] التحقق من صحة البيانات
+- [x] إرسال البيانات
 
 ### 3.5 تعديل مصروف
 
-- [ ] إنشاء EditExpenseView.vue
-- [ ] تحميل بيانات المصروف
-- [ ] إعادة استخدام ExpenseForm
-- [ ] حفظ التعديلات
+- [x] إنشاء EditExpenseView.vue
+- [x] تحميل بيانات المصروف
+- [x] حفظ التعديلات
 
 ### 3.6 حذف مصروف
 
-- [ ] إنشاء AppModal.vue
-- [ ] نافذة تأكيد الحذف
-- [ ] تنفيذ الحذف
+- [x] إنشاء ConfirmModal.vue
+- [x] نافذة تأكيد الحذف
+- [x] تنفيذ الحذف
 
 ---
 
-## المرحلة 4: الصور (Images)
+## المرحلة 4: الصور (Images) ✅
 
 ### 4.1 ضغط الصور
 
-- [ ] إنشاء useImageCompression.ts
-- [ ] تنفيذ compress()
-- [ ] تنفيذ resize()
-- [ ] تحويل إلى Base64
-- [ ] التحقق من الحجم
+- [x] إنشاء useImageCompression.ts
+- [x] تنفيذ compress()
+- [x] تنفيذ resize()
+- [x] تحويل إلى Base64
+- [x] التحقق من الحجم
 
 ### 4.2 رفع الصور
 
-- [ ] إنشاء ImageUploader.vue
-- [ ] اختيار ملف
-- [ ] معاينة الصورة
-- [ ] شريط التقدم
-- [ ] إلغاء الرفع
+- [x] إنشاء ImageUpload.vue
+- [x] اختيار ملف
+- [x] معاينة الصورة
+- [x] عرض نسبة الضغط
+- [x] إلغاء/تغيير الصورة
 
 ### 4.3 عرض الصور
 
-- [ ] عرض الصورة في ExpenseCard
-- [ ] عرض الصورة بالحجم الكامل (modal)
-- [ ] تكبير/تصغير
+- [x] عرض الصورة في قائمة المصروفات
+- [x] إنشاء ImagePreviewModal.vue
+- [x] عرض الصورة بالحجم الكامل (modal)
 
 ---
 
-## المرحلة 5: لوحة التحكم (Dashboard)
+## المرحلة 5: لوحة التحكم (Dashboard) ✅
 
 ### 5.1 الصفحة الرئيسية
 
-- [ ] إنشاء DashboardView.vue
-- [ ] تخطيط الشبكة
+- [x] إنشاء DashboardView.vue
+- [x] تخطيط الشبكة
 
 ### 5.2 ملخص الشهر
 
-- [ ] إنشاء MonthSummary.vue
-- [ ] إجمالي المصروفات
-- [ ] مقارنة بالشهر السابق
-- [ ] اختيار الشهر
+- [x] إجمالي المصروفات
+- [x] عدد المصروفات
+- [x] اختيار الشهر/السنة
 
 ### 5.3 مصروفات المستخدمين
 
-- [ ] إنشاء UserExpenses.vue
-- [ ] مصروفات الزوج
-- [ ] مصروفات الزوجة
-- [ ] النسبة المئوية
+- [x] مصروفات الزوج
+- [x] مصروفات الزوجة
+- [x] شريط المقارنة البصري
 
 ### 5.4 تقسيم الفئات
 
-- [ ] إنشاء CategoryBreakdown.vue
-- [ ] قائمة الفئات
-- [ ] المبلغ لكل فئة
-- [ ] النسبة المئوية
+- [x] إنشاء CategoryBreakdown
+- [x] قائمة الفئات
+- [x] المبلغ لكل فئة
+- [x] النسبة المئوية
+
+### 5.5 آخر المصروفات
+
+- [x] عرض آخر 5 مصروفات
+- [x] رابط لعرض الكل
 
 ---
 
-## المرحلة 6: المكونات المشتركة
+## المرحلة 6: المكونات المشتركة ✅
 
-### 6.1 الأزرار
+### 6.1 المكونات الأساسية
 
-- [ ] إنشاء AppButton.vue
-- [ ] variants: primary, secondary, danger
-- [ ] sizes: sm, md, lg
-- [ ] loading state
-- [ ] disabled state
+- [x] إنشاء StatCard.vue
+- [x] إنشاء Badge.vue
+- [x] إنشاء EmptyState.vue
+- [x] إنشاء FloatingActionButton.vue
 
-### 6.2 حقول الإدخال
+### 6.2 التحميل
 
-- [ ] إنشاء AppInput.vue
-- [ ] أنواع: text, number, email, password
-- [ ] error state
-- [ ] helper text
+- [x] إنشاء SkeletonLoader.vue (card, text, stat, expense)
+- [x] إنشاء PullToRefreshIndicator.vue
+- [x] إنشاء usePullToRefresh.ts
 
-### 6.3 التحميل
+### 6.3 التنبيهات
 
-- [ ] إنشاء AppLoader.vue
-- [ ] spinner
-- [ ] skeleton
+- [x] إنشاء ToastContainer.vue
+- [x] إنشاء useToast.ts
+- [x] success, error, warning, info types
+- [x] auto-dismiss
+- [x] manual dismiss
 
-### 6.4 التنبيهات
+### 6.4 النوافذ المنبثقة
 
-- [ ] إنشاء AppToast.vue
-- [ ] success, error, warning, info
-- [ ] auto-dismiss
-- [ ] manual dismiss
+- [x] إنشاء ConfirmModal.vue
+- [x] إنشاء ImagePreviewModal.vue
 
 ---
 
-## المرحلة 7: الأدوات المساعدة
+## المرحلة 7: الملف الشخصي والإعدادات ✅
 
-### 7.1 التاريخ
+### 7.1 الملف الشخصي
 
-- [ ] إنشاء utils/date.ts
-- [ ] formatDate() - بالعربية
-- [ ] formatRelative() - "منذ ساعة"
-- [ ] getMonthName() - بالعربية
+- [x] إنشاء ProfileView.vue
+- [x] إنشاء useProfile.ts
+- [x] اختيار الدور (زوج/زوجة)
+- [x] الاسم المستعار
+- [x] صورة الملف الشخصي (Avatar)
+- [x] حفظ في Firestore
 
-### 7.2 العملة
+### 7.2 الإعدادات
 
-- [ ] إنشاء utils/currency.ts
-- [ ] formatCurrency() - "150 ج.م"
-- [ ] parseAmount()
-
----
-
-## المرحلة 8: الاختبارات
-
-### 8.1 اختبارات الوحدات
-
-- [ ] اختبار useAuth
-- [ ] اختبار useExpenses
-- [ ] اختبار useImageCompression
-- [ ] اختبار utils
-
-### 8.2 اختبارات المكونات
-
-- [ ] اختبار LoginView
-- [ ] اختبار ExpenseForm
-- [ ] اختبار ExpenseCard
+- [x] إنشاء SettingsView.vue
+- [x] إدارة الفئات (إضافة/تعديل/حذف)
+- [x] واجهة إضافة فئة جديدة
+- [x] اختيار الأيقونة واللون
 
 ---
 
-## المرحلة 9: النشر
+## المرحلة 8: الأدوات المساعدة ✅
 
-### 9.1 إعداد GitHub
+### 8.1 التاريخ
 
-- [ ] إنشاء repository
-- [ ] إضافة secrets
-- [ ] إنشاء workflow
+- [x] إنشاء utils/date.ts
+- [x] formatDate() - بالعربية
+- [x] formatRelative() - "منذ ساعة"
+- [x] getMonthName() - بالعربية
 
-### 9.2 Firebase Production
+### 8.2 العملة
 
-- [ ] التحقق من Firestore rules
-- [ ] إضافة Firebase domains
-- [ ] اختبار الإنتاج
-
-### 9.3 الاختبار النهائي
-
-- [ ] اختبار على الموبايل
-- [ ] اختبار على التابلت
-- [ ] اختبار على الديسكتوب
-- [ ] اختبار تسجيل الدخول
-- [ ] اختبار CRUD كامل
-- [ ] اختبار رفع الصور
+- [x] إنشاء utils/currency.ts
+- [x] formatCurrency() - "150 ج.م"
 
 ---
 
-## المرحلة 10: التحسينات (اختياري)
+## المرحلة 9: الميزات الإضافية ✅
 
-### 10.1 الأداء
+### 9.1 الوضع الداكن (Dark Mode)
 
-- [ ] lazy loading للمسارات
-- [ ] lazy loading للصور
-- [ ] caching
+- [x] إنشاء useTheme.ts
+- [x] زر التبديل في Header
+- [x] حفظ التفضيل في localStorage
+- [x] دعم تفضيل النظام
+- [x] تطبيق Dark Mode على جميع الصفحات
+- [x] تطبيق Dark Mode على جميع المكونات
 
-### 10.2 تجربة المستخدم
+### 9.2 PWA Support
 
-- [ ] animations
-- [ ] skeleton loaders
-- [ ] pull-to-refresh
+- [x] إعداد vite-plugin-pwa
+- [x] إنشاء manifest.json
+- [x] إنشاء أيقونات PWA
+- [x] إنشاء PWAInstallPrompt.vue
+- [x] دعم التثبيت على الجهاز
 
-### 10.3 PWA (اختياري)
+### 9.3 البحث
 
-- [ ] service worker
-- [ ] manifest.json
-- [ ] offline support
+- [x] البحث في المصروفات
+- [x] البحث بالفئة أو الملاحظات أو المبلغ
+- [x] زر مسح البحث
+
+---
+
+## المرحلة 10: النشر (Deployment) ✅
+
+### 10.1 إعداد GitHub
+
+- [x] إنشاء repository
+- [x] إنشاء GitHub Actions workflow
+- [x] دفع الكود إلى GitHub
+
+### 10.2 GitHub Pages
+
+- [x] إعداد base path في vite.config.ts
+- [x] إعداد hash history في router
+- [x] إنشاء workflow للنشر التلقائي
+
+### 10.3 Firebase
+
+- [x] إعداد Firebase project
+- [x] إعداد Authentication
+- [x] إعداد Firestore
+
+---
+
+## ملخص الإنجازات 🎉
+
+### الصفحات المنشأة (7 صفحات)
+
+1. ✅ LoginView - صفحة تسجيل الدخول
+2. ✅ DashboardView - لوحة التحكم الرئيسية
+3. ✅ ExpensesView - قائمة المصروفات
+4. ✅ AddExpenseView - إضافة مصروف جديد
+5. ✅ EditExpenseView - تعديل مصروف
+6. ✅ ProfileView - الملف الشخصي
+7. ✅ SettingsView - الإعدادات
+
+### المكونات المنشأة (15 مكون)
+
+**Layout:**
+- AppHeader.vue
+- AppNav.vue
+- AppLayout.vue
+
+**Common:**
+- StatCard.vue
+- Badge.vue
+- EmptyState.vue
+- FloatingActionButton.vue
+- SkeletonLoader.vue
+- ConfirmModal.vue
+- ImageUpload.vue
+- ImagePreviewModal.vue
+- PullToRefreshIndicator.vue
+- ToastContainer.vue
+- PWAInstallPrompt.vue
+
+### Composables (8 ملفات)
+
+- useAuth.ts
+- useExpenses.ts
+- useCategories.ts
+- useProfile.ts
+- useImageCompression.ts
+- useTheme.ts
+- useToast.ts
+- usePullToRefresh.ts
+
+### الميزات الرئيسية
+
+- ✅ تسجيل الدخول بالبريد الإلكتروني
+- ✅ إدارة المصروفات (CRUD كامل)
+- ✅ الفئات القابلة للتخصيص
+- ✅ رفع صور الفواتير مع الضغط
+- ✅ لوحة تحكم بالإحصائيات
+- ✅ الوضع الداكن
+- ✅ دعم PWA
+- ✅ البحث في المصروفات
+- ✅ واجهة عربية RTL
+- ✅ تصميم متجاوب (Mobile-first)
+- ✅ نشر على GitHub Pages
 
 ---
 
 ## ملاحظات
 
-### المهمة الحالية
+### الرابط المباشر
 
-> اكتب هنا المهمة التي تعمل عليها حالياً
+> https://abanoub2017.github.io/home-wallet/
 
-### المشاكل المعلقة
+### التقنيات المستخدمة
 
-> اكتب هنا أي مشاكل تحتاج حل
+- Vue 3.5 + Composition API
+- TypeScript 5.9
+- Vite 7.3
+- Tailwind CSS 4
+- Firebase 12 (Auth + Firestore)
+- vite-plugin-pwa
 
-### أفكار للتحسين
+### أفكار للتحسين المستقبلي
 
-> اكتب هنا أفكار للمستقبل
+- [ ] تصدير البيانات (CSV/PDF)
+- [ ] الإشعارات
+- [ ] الميزانية الشهرية
+- [ ] تقارير متقدمة
+- [ ] دعم لغات إضافية
