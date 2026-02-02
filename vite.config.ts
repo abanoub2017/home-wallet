@@ -8,8 +8,8 @@ import { VitePWA } from 'vite-plugin-pwa'
 
 // https://vite.dev/config/
 export default defineConfig({
-  // Base path for GitHub Pages deployment
-  base: '/home-wallet/',
+  // Base path for Firebase Hosting (root)
+  base: '/',
 
   plugins: [
     vue(),
@@ -28,8 +28,8 @@ export default defineConfig({
         orientation: 'portrait',
         dir: 'rtl',
         lang: 'ar',
-        start_url: '/home-wallet/',
-        scope: '/home-wallet/',
+        start_url: '/',
+        scope: '/',
         icons: [
           {
             src: 'pwa-192x192.png',
