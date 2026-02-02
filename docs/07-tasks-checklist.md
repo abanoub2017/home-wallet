@@ -328,11 +328,13 @@
 ### المكونات المنشأة (15 مكون)
 
 **Layout:**
+
 - AppHeader.vue
 - AppNav.vue
 - AppLayout.vue
 
 **Common:**
+
 - StatCard.vue
 - Badge.vue
 - EmptyState.vue
