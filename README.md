@@ -1,135 +1,150 @@
-# 💰 محفظة المنزل - Home Wallet
+<div align="center">
 
-تطبيق ويب لإدارة مصروفات الأسرة، مصمم خصيصاً للأزواج لتتبع وإدارة النفقات المنزلية.
+# 💰 Home Wallet
 
-![Vue.js](https://img.shields.io/badge/Vue.js-3.5-4FC08D?logo=vue.js)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?logo=typescript)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.0-38B2AC?logo=tailwind-css)
-![Firebase](https://img.shields.io/badge/Firebase-12-FFCA28?logo=firebase)
+### Modern Household Expense Management App
 
-## 🌐 الرابط المباشر
+A beautiful, feature-rich web application for couples to track and manage their household expenses together.
 
-**[https://abanoub2017.github.io/home-wallet/](https://abanoub2017.github.io/home-wallet/)**
+[![Vue.js](https://img.shields.io/badge/Vue.js-3.5-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white)](https://vuejs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Firebase](https://img.shields.io/badge/Firebase-12-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.0-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 
----
+[🚀 Live Demo](https://home-wallet-4254d.web.app) • [📚 Documentation](./docs/)
 
-## ✨ المميزات
-
-### الأساسية
-
-- 🔐 **تسجيل الدخول** - مصادقة آمنة عبر البريد الإلكتروني
-- 💸 **إدارة المصروفات** - إضافة، تعديل، حذف المصروفات
-- 📊 **لوحة تحكم** - إحصائيات شاملة ورسوم بيانية
-- 🏷️ **الفئات** - تصنيف المصروفات (قابلة للتخصيص)
-- 📸 **صور الفواتير** - رفع وضغط الصور تلقائياً
-
-### تجربة المستخدم
-
-- 🌙 **الوضع الداكن** - دعم كامل للوضع الليلي
-- 📱 **PWA** - تثبيت كتطبيق على الجهاز
-- 🔍 **البحث** - البحث في المصروفات
-- 🌍 **RTL** - واجهة عربية بالكامل
-- 📲 **Mobile-First** - تصميم متجاوب
-
-### الإحصائيات
-
-- 📈 إجمالي المصروفات الشهرية
-- 👫 مقارنة مصروفات الزوج والزوجة
-- 📋 تقسيم حسب الفئات
-- 📅 تصفية حسب الشهر والسنة
+</div>
 
 ---
 
-## 🛠️ التقنيات المستخدمة
+## ✨ Features
 
-| التقنية         | الإصدار | الغرض              |
-| --------------- | ------- | ------------------ |
-| Vue.js 3        | 3.5.27  | إطار العمل الأساسي |
-| TypeScript      | 5.9.3   | Type Safety        |
-| Vite            | 7.3.1   | أداة البناء        |
-| Tailwind CSS    | 4.x     | التصميم            |
-| Firebase Auth   | 12.x    | المصادقة           |
-| Firestore       | 12.x    | قاعدة البيانات     |
-| vite-plugin-pwa | 1.2.0   | دعم PWA            |
+### 🎯 Core Features
+
+- **🔐 Secure Authentication** - Email/password authentication via Firebase
+- **💸 Expense Management** - Full CRUD operations for household expenses
+- **📊 Interactive Dashboard** - Real-time statistics and visual insights
+- **🏷️ Custom Categories** - Personalized expense categorization with emoji icons
+- **📸 Receipt Upload** - Automatic image compression and storage
+
+### 🎨 User Experience
+
+- **🌙 Dark Mode** - Seamless light/dark theme switching
+- **📱 PWA Support** - Install as a native app on any device
+- **🔍 Smart Search** - Quick filtering across expenses
+- **🌍 RTL Support** - Full Arabic language interface
+- **📲 Mobile-First** - Responsive design optimized for all screen sizes
+- **♻️ Pull to Refresh** - Native-like mobile interactions
+
+### 📈 Analytics
+
+- Monthly expense totals with trend analysis
+- Husband vs Wife spending comparison
+- Category-wise breakdown with percentages
+- Flexible date range filtering
 
 ---
 
-## 🚀 البدء السريع
+## 🛠️ Tech Stack
 
-### المتطلبات
+| Technology        | Version | Purpose                          |
+| ----------------- | ------- | -------------------------------- |
+| **Vue 3**         | 3.5.27  | Progressive JavaScript framework |
+| **TypeScript**    | 5.9.3   | Type-safe development            |
+| **Vite**          | 7.3.1   | Lightning-fast build tool        |
+| **Tailwind CSS**  | 4.x     | Utility-first styling            |
+| **Firebase Auth** | 12.x    | User authentication              |
+| **Firestore**     | 12.x    | Real-time NoSQL database         |
+| **PWA Plugin**    | 1.2.0   | Progressive web app features     |
 
-- Node.js v20.19+ أو v22.12+
-- npm
-- حساب Firebase
+---
 
-### التثبيت
+## 🚀 Quick Start
+
+### Prerequisites
+
+- Node.js `v20.19+` or `v22.12+`
+- npm or yarn
+- Firebase account
+
+### Installation
 
 ```bash
-# استنساخ المشروع
+# Clone the repository
 git clone https://github.com/abanoub2017/home-wallet.git
 cd home-wallet
 
-# تثبيت التبعيات
+# Install dependencies
 npm install
 
-# إنشاء ملف البيئة
+# Set up environment variables
 cp .env.example .env
-
-# تعديل .env بإعدادات Firebase الخاصة بك
+# Edit .env with your Firebase credentials
 ```
 
-### التطوير
+### Development
 
 ```bash
+# Start dev server (http://localhost:5173)
 npm run dev
+
+# Run type checking
+npm run type-check
+
+# Format code
+npm run format
 ```
 
-### البناء للإنتاج
+### Production
 
 ```bash
+# Build for production
 npm run build
+
+# Deploy to Firebase
+npm run deploy
 ```
 
 ---
 
-## 📁 هيكل المشروع
+## 📁 Project Structure
 
 ```
 src/
-├── assets/styles/      # ملفات CSS
+├── assets/styles/      # Global CSS files
 ├── components/
-│   ├── common/         # مكونات مشتركة
-│   └── layout/         # مكونات التخطيط
-├── composables/        # Vue Composables
-├── config/             # إعدادات Firebase والفئات
-├── router/             # Vue Router
-├── types/              # TypeScript Types
-├── utils/              # دوال مساعدة
-└── views/              # صفحات التطبيق
+│   ├── common/         # Reusable UI components
+│   └── layout/         # Layout components (Header, Nav)
+├── composables/        # Vue composition functions
+├── config/             # Firebase & app configuration
+├── router/             # Vue Router setup
+├── types/              # TypeScript type definitions
+├── utils/              # Helper functions
+└── views/              # Page components
 ```
 
 ---
 
-## 📄 الصفحات
+## 🎯 Key Pages
 
-| الصفحة      | الوصف                |
-| ----------- | -------------------- |
-| `/`         | لوحة التحكم الرئيسية |
-| `/expenses` | قائمة المصروفات      |
-| `/add`      | إضافة مصروف جديد     |
-| `/edit/:id` | تعديل مصروف          |
-| `/profile`  | الملف الشخصي         |
-| `/settings` | إعدادات الفئات       |
-| `/login`    | تسجيل الدخول         |
+| Route       | Description                  |
+| ----------- | ---------------------------- |
+| `/`         | Dashboard with monthly stats |
+| `/expenses` | Expense list with filters    |
+| `/add`      | Add new expense              |
+| `/edit/:id` | Edit existing expense        |
+| `/profile`  | User profile settings        |
+| `/settings` | Category management          |
+| `/login`    | Authentication page          |
 
 ---
 
-## 🔧 إعداد Firebase
+## 🔧 Firebase Setup
 
-1. أنشئ مشروع جديد في [Firebase Console](https://console.firebase.google.com/)
-2. فعّل Authentication (Email/Password)
-3. أنشئ قاعدة بيانات Firestore
-4. انسخ إعدادات المشروع إلى ملف `.env`
+1. Create a new project at [Firebase Console](https://console.firebase.google.com/)
+2. Enable **Authentication** → Email/Password provider
+3. Create a **Firestore Database** (Start in production mode)
+4. Copy your Firebase config to `.env`:
 
 ```env
 VITE_FIREBASE_API_KEY=your-api-key
@@ -140,59 +155,92 @@ VITE_FIREBASE_MESSAGING_SENDER_ID=your-sender-id
 VITE_FIREBASE_APP_ID=your-app-id
 ```
 
----
+### Firestore Security Rules
 
-## 📱 لقطات الشاشة
-
-### الوضع الفاتح
-
-- لوحة التحكم مع إحصائيات الشهر
-- قائمة المصروفات مع البحث
-- نموذج إضافة مصروف
-
-### الوضع الداكن
-
-- دعم كامل لجميع الصفحات
-- تبديل تلقائي حسب تفضيل النظام
-
----
-
-## 📚 التوثيق
-
-راجع مجلد [docs/](./docs/) للتوثيق التفصيلي:
-
-- [خطة المشروع](./docs/01-project-plan.md)
-- [المعمارية](./docs/02-architecture.md)
-- [دليل الأنماط](./docs/03-style-guide.md)
-- [نظام التصميم](./docs/04-design-system.md)
-- [دليل الإعداد](./docs/05-setup-guide.md)
-- [دليل النشر](./docs/06-deployment.md)
-- [قائمة المهام](./docs/07-tasks-checklist.md)
+```javascript
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /users/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+    match /expenses/{expenseId} {
+      allow read, write: if request.auth != null;
+    }
+    match /categories/{categoryId} {
+      allow read, write: if request.auth != null;
+    }
+  }
+}
+```
 
 ---
 
-## 🤝 المساهمة
+## 📱 PWA Features
 
-المساهمات مرحب بها! يرجى:
-
-1. Fork المشروع
-2. إنشاء branch جديد (`git checkout -b feature/amazing-feature`)
-3. Commit التغييرات (`git commit -m 'Add amazing feature'`)
-4. Push إلى Branch (`git push origin feature/amazing-feature`)
-5. فتح Pull Request
+- ✅ Offline functionality
+- ✅ Install prompt
+- ✅ App-like experience
+- ✅ Automatic updates
+- ✅ Responsive icons
 
 ---
 
-## 📝 الترخيص
+## 🎨 Design System
 
-هذا المشروع للاستخدام الشخصي.
+### Color Palette
+
+- **Primary**: Indigo (#6366f1)
+- **Husband**: Blue (#3b82f6)
+- **Wife**: Pink (#ec4899)
+- **Success**: Green (#10b981)
+- **Warning**: Yellow (#f59e0b)
+- **Danger**: Red (#ef4444)
+
+### Typography
+
+- **Font**: Cairo (Google Fonts) - Optimized for Arabic
+- **Weights**: 300, 400, 600, 700
 
 ---
 
-## 👨‍💻 المطور
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+---
+
+## 📝 License
+
+This project is open source and available for personal use.
+
+---
+
+## 👨‍💻 Author
 
 **Abanoub George**
 
 ---
 
-**آخر تحديث:** فبراير 2026
+## 🙏 Acknowledgments
+
+- Vue.js team for the amazing framework
+- Firebase for backend infrastructure
+- Tailwind CSS for the utility-first approach
+- The open-source community
+
+---
+
+<div align="center">
+
+**Built with ❤️ using Vue 3 + TypeScript + Firebase**
+
+[⬆ Back to Top](#-home-wallet)
+
+</div>
