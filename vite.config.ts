@@ -17,13 +17,16 @@ export default defineConfig({
     vueDevTools(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'mask-icon.svg'],
+      includeAssets: ['favicon.ico', 'pwa-192x192.png', 'pwa-512x512.png'],
+      devOptions: {
+        enabled: true,
+      },
       manifest: {
-        name: 'محفظة المنزل',
-        short_name: 'محفظة المنزل',
-        description: 'تطبيق إدارة مصروفات المنزل',
+        name: 'Home Wallet - محفظة المنزل',
+        short_name: 'Home Wallet',
+        description: 'Household Expense Management App',
         theme_color: '#6366f1',
-        background_color: '#f3f4f6',
+        background_color: '#ffffff',
         display: 'standalone',
         orientation: 'portrait',
         dir: 'rtl',
@@ -51,6 +54,8 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,ico,png,svg,woff2}'],
+        navigateFallback: 'index.html',
+        navigateFallbackDenylist: [/^\/api/],
         runtimeCaching: [
           {
             urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,
@@ -77,6 +82,17 @@ export default defineConfig({
               },
               cacheableResponse: {
                 statuses: [0, 200],
+              },
+            },
+          },
+          {
+            urlPattern: /^https:\/\/firebasestorage\.googleapis\.com\/.*/i,
+            handler: 'NetworkFirst',
+            options: {
+              cacheName: 'firebase-images-cache',
+              expiration: {
+                maxEntries: 50,
+                maxAgeSeconds: 60 * 60 * 24 * 7, // 1 week
               },
             },
           },
