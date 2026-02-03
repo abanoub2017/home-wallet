@@ -120,7 +120,7 @@ function getColorClass(color: string): string {
                         التاريخ <span class="text-red-500">*</span>
                     </label>
                     <input v-model="date" type="date" required
-                        class="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors"
+                        class="w-full max-w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors [color-scheme:light] dark:[color-scheme:dark] text-base"
                         :disabled="isLoading" />
                 </div>
 

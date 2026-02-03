@@ -132,22 +132,23 @@ export function useExpenses() {
         isLoading.value = true
         error.value = null
 
-        try {
-            const now = Timestamp.now()
-            const expenseData = {
-                amount: data.amount,
-                category: data.category,
-                date: Timestamp.fromDate(data.date),
-                notes: data.notes || '',
-                imageBase64: data.imageBase64 || '',
-                createdBy: {
-                    id: userInfo.value.id,
-                    role: userInfo.value.role,
-                },
-                createdAt: now,
-                updatedAt: now,
-            }
+        // Prepare expense data outside try block so it's accessible in catch
+        const now = Timestamp.now()
+        const expenseData = {
+            amount: data.amount,
+            category: data.category,
+            date: Timestamp.fromDate(data.date),
+            notes: data.notes || '',
+            imageBase64: data.imageBase64 || '',
+            createdBy: {
+                id: userInfo.value.id,
+                role: userInfo.value.role,
+            },
+            createdAt: now,
+            updatedAt: now,
+        }
 
+        try {
             const docRef = await addDoc(collection(db, COLLECTION_NAME), expenseData)
 
             // Add to local state
@@ -159,6 +160,17 @@ export function useExpenses() {
             return docRef.id
         } catch (e: any) {
             console.error('Error adding expense:', e)
+            // Check if offline - Firebase will sync when back online
+            if (e.code === 'unavailable' || e.message?.includes('offline')) {
+                // Generate temporary ID
+                const tempId = 'temp_' + Date.now()
+                expenses.value.unshift({
+                    id: tempId,
+                    ...expenseData,
+                } as Expense)
+                error.value = null // Clear error for offline mode
+                return tempId // Return temp ID to show success
+            }
             error.value = 'فشل في إضافة المصروف'
             return null
         } finally {

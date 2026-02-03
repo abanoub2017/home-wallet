@@ -12,7 +12,7 @@ import AppNav from './AppNav.vue'
     <div class="min-h-screen bg-gray-50 dark:bg-gray-900 flex flex-col">
         <AppHeader />
 
-        <main class="flex-1 max-w-lg mx-auto w-full px-4 py-4 pb-20">
+        <main class="flex-1 max-w-lg mx-auto w-full px-4 py-4 pb-28">
             <slot />
         </main>
 

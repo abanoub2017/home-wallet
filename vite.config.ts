@@ -21,6 +21,7 @@ export default defineConfig({
       devOptions: {
         enabled: true,
       },
+      injectRegister: 'auto',
       manifest: {
         name: 'Home Wallet - محفظة المنزل',
         short_name: 'Home Wallet',
@@ -56,6 +57,9 @@ export default defineConfig({
         globPatterns: ['**/*.{js,css,html,ico,png,svg,woff2}'],
         navigateFallback: 'index.html',
         navigateFallbackDenylist: [/^\/api/],
+        cleanupOutdatedCaches: true,
+        clientsClaim: true,
+        skipWaiting: true,
         runtimeCaching: [
           {
             urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,

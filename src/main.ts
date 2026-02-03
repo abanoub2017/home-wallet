@@ -12,6 +12,20 @@ import { useTheme } from './composables/useTheme'
 const { initTheme } = useTheme()
 initTheme()
 
+// Register Service Worker with auto-update
+import { registerSW } from 'virtual:pwa-register'
+
+const updateSW = registerSW({
+    onNeedRefresh() {
+        // Auto reload when new version is available
+        updateSW(true)
+    },
+    onOfflineReady() {
+        console.log('App ready to work offline')
+    },
+    immediate: true,
+})
+
 const app = createApp(App)
 
 app.use(createPinia())
